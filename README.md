@@ -89,7 +89,7 @@ You can use the `mpiexec` command to run the program on multiple machines, the c
 mpiexec -n <N> -f <hosts> ./run <data_graph_path> <query_graph_path> <t>
 ```
 
-where **N** is the number of machines/, **hosts** is the hosts file, **data_graph_path** is the HDFS path of the data graph, **query_graph_path** is the HDFS path of the query graph, and **t** is the number of threads per machine.
+where **N** is the number of machines/processes, **hosts** is the hosts file, **data_graph_path** is the HDFS path of the data graph, **query_graph_path** is the HDFS path of the query graph, and **t** is the number of threads per machine/process.
 
 ### Running on a single machine
 
