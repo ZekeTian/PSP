@@ -50,7 +50,7 @@ Sample:
 
 ## Configuration
 
-In the `ydhdfs2.h` file in the `$PMQO_PATH/system/util` (**$PMQO_PATH** is the root directory of the project), you need to specify the master machine  (aka NameNode) and port in the Hadoop cluster.
+In the `ydhdfs2.h` file in the `$PMQO_PATH/system/util` (**$PMQO_PATH** is the root directory of the project), you need to specify the hostname and port of the master machine (aka NameNode) of the Hadoop cluster. 
 
 ```c++
 // $PMQO_PATH/system/util/ydhdfs2.h
