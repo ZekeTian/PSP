@@ -1,4 +1,4 @@
-# PMQO: Parallel multi-query optimization
+# PSP: Parallel Subgraph query Processing
 
 We study how to exploit the inherent parallelism of parallel computing systems for both intraquery and interquery parallelism during subgraph query processing over large graphs. Different from widely used hash-based parallelism techniques, we utilize and extend locality sensitive hashing based on the structures of subgraph queries to merge multiple tasks during a single subgraph query processing or multiple subgraph queries. 
 
@@ -50,10 +50,10 @@ Sample:
 
 ## Configuration
 
-In the `ydhdfs2.h` file in the `$PMQO_PATH/system/util` (**$PMQO_PATH** is the root directory of the project), you need to specify the hostname and port of the master machine (aka NameNode) of the Hadoop cluster. 
+In the `ydhdfs2.h` file in the `$PSP_PATH/system/util` (**$PSP_PATH** is the root directory of the project), you need to specify the hostname and port of the master machine (aka NameNode) of the Hadoop cluster. 
 
 ```c++
-// $PMQO_PATH/system/util/ydhdfs2.h
+// $PSP_PATH/system/util/ydhdfs2.h
 hdfsBuilderSetNameNode(bld, "master"); // master machine's hostname, default is master
 hdfsBuilderSetNameNodePort(bld, 9000); // port, default is 9000
 ```
